@@ -80,7 +80,7 @@ public class ShiroConfig {
         //设置过滤器链
         Map<String,String> filterChainDefinitionsMap = new LinkedHashMap<String,String>();
         //放行路径（匿名访问）
-        filterChainDefinitionsMap.put("/resources/**","anon");//静态资源
+        filterChainDefinitionsMap.put("/**","anon");//静态资源
         filterChainDefinitionsMap.put("/sys/user/login","anon");//登录请求
         filterChainDefinitionsMap.put("/sys/login","anon");//去到登录页面
         filterChainDefinitionsMap.put("/sys/user/getCode","anon");//获取登录验证码
